@@ -324,7 +324,7 @@
 .consult-section {
   background-color: #1f1f34;
   padding-top: 1.40625rem;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .consult-section .consult-title {
@@ -355,13 +355,13 @@
   width: 1.03125rem;
   height: 0.78125rem;
   margin-right: 0.234375rem;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .consult-section .consult-complimentary .consult-subhead span {
   font-size: 0.46875rem;
   font-weight: 500;
   color: #fff;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .consult-section .consult-complimentary .consult-subhead:last-child {
   margin-bottom: 0;
