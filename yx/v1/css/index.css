@@ -2,22 +2,14 @@
 .banner-section {
   height: 9.375rem;
   padding-bottom: 0.5625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   background-image: url(../img/banner.png);
   background-size: cover;
 }
 .banner-section .banner-subhead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 0.875rem;
   margin-bottom: 0.40625rem;
   font-size: 0;
@@ -223,7 +215,7 @@
 .teach-section {
   height: 11.875rem;
   background-image: url(../img/teach-background.png);
-  background-size: 100% 11.875rem;
+  background-size: cover;
   padding-top: 0.46875rem;
 }
 .teach-section .teach-title {
@@ -331,7 +323,7 @@
   background-color: #1c1c1c;
 }
 .consult-section {
-  height: 13.28125rem;
+  height: 14.0625rem;
   background-color: #1f1f34;
   padding-top: 1.40625rem;
   text-align: center;
@@ -385,12 +377,8 @@
 .consult-section .from-container .imgcode-label {
   position: relative;
   height: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 9.0625rem;
 }
 .consult-section .from-container .imgcode-label:before {
@@ -404,15 +392,11 @@
 }
 .consult-section .from-container .imgcode-label .imgcode-input {
   padding: 0 0.46875rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   width: 5.9375rem;
 }
 .consult-section .from-container .imgcode-label .imgcode-img {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 2.65625rem;
   height: 0.78125rem;
   font-size: 0.375rem;
@@ -425,12 +409,8 @@
 .consult-section .from-container .sms-label {
   position: relative;
   height: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 9.0625rem;
 }
 .consult-section .from-container .sms-label:before {
@@ -444,15 +424,11 @@
 }
 .consult-section .from-container .sms-label .sms-code {
   padding: 0 0.46875rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   width: 5.9375rem;
 }
 .consult-section .from-container .sms-label .send-code {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 2.65625rem;
   line-height: 0.78125rem;
   font-size: 0.375rem;
@@ -479,8 +455,7 @@
   width: 100%;
   line-height: 1.484375rem;
   border-radius: 0.15625rem;
-  -webkit-box-shadow: 0.03125rem 0.03125rem 0.125rem #222222;
-          box-shadow: 0.03125rem 0.03125rem 0.125rem #222222;
+  box-shadow: 0.03125rem 0.03125rem 0.125rem #222222;
   text-align: center;
   color: #fff;
   background-color: #e72c2b;
@@ -518,25 +493,20 @@
 .consult-section .sms-label {
   position: relative;
   height: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 9.0625rem;
 }
 .consult-section .sms-label .sms-code {
   padding: 0 0.46875rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   width: 5.9375rem;
 }
 .consult-section .sms-label .send-code {
   -webkit-box-flex: 0;
-  -ms-flex: none;
-      flex: none;
+  flex: none;
   width: 2.65625rem;
   line-height: 0.78125rem;
   font-size: 0.375rem;
