@@ -1,6 +1,6 @@
 @charset "utf-8";
 .banner-section {
-  height: 9.375rem;
+  min-height: 9.375rem;
   padding-bottom: 0.5625rem;
   display: flex;
   align-items: flex-end;
@@ -36,7 +36,7 @@
 }
 .need-section {
   position: relative;
-  height: 8.90625rem;
+  min-height: 8.90625rem;
   background-image: url(../img/need-background.png);
   background-size: cover;
   padding: 0.71875rem 0 0 2.65625rem;
@@ -96,10 +96,10 @@
   left: 5rem;
 }
 .cultivate-section {
-  height: 12.34375rem;
   background-image: url(../img/cultivate-background.png);
   background-size: cover;
-  padding-top: 0.59375rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.46875rem;
 }
 .cultivate-section .cultivate-title {
   font-size: 0.625rem;
@@ -160,10 +160,10 @@
   margin-right: 0;
 }
 .authorization-section {
-  height: 13.125rem;
   background-image: url(../img/authorization.png);
   background-size: cover;
-  padding-top: 0.5625rem;
+  padding-top: 0.71875rem;
+  padding-bottom: 0.5rem;
 }
 .authorization-section .authorization-title {
   font-size: 0.5rem;
@@ -183,11 +183,11 @@
   height: 9.75rem;
 }
 .patent-section {
-  height: 13.125rem;
   background-image: url(../img/patent.png);
   background-size: cover;
   background-color: #313038;
   padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 .patent-section .patent-title {
   font-size: 0.625rem;
@@ -213,7 +213,6 @@
   height: 9.84375rem;
 }
 .teach-section {
-  height: 11.875rem;
   background-image: url(../img/teach-background.png);
   background-size: cover;
   padding-top: 0.46875rem;
@@ -286,10 +285,10 @@
   background-color: #1c1c1c;
 }
 .publicity-section {
-  height: 10rem;
   background-image: url(../img/publicity-background.png);
   background-size: cover;
   padding-top: 0.625rem;
+  padding-bottom: 0.15625rem;
 }
 .publicity-section .publicity-title {
   text-align: center;
@@ -323,9 +322,9 @@
   background-color: #1c1c1c;
 }
 .consult-section {
-  height: 14.0625rem;
   background-color: #1f1f34;
   padding-top: 1.40625rem;
+  padding-bottom: 50px;
   text-align: center;
 }
 .consult-section .consult-title {
