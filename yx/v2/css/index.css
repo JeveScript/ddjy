@@ -894,6 +894,7 @@ body {
   line-height: 36px;
   color: #fff;
   font-weight: 500;
+  text-align: left;
 }
 .policy-section .policy-name-list {
   width: 1100px;
