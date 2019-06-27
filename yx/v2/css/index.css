@@ -7,6 +7,9 @@
 a {
   text-decoration: none;
 }
+body {
+  min-width: 1200px;
+}
 .page-link-button {
   display: inline-block;
   width: 300px;
@@ -103,17 +106,19 @@ a {
   line-height: 56px;
   font-size: 46px;
   color: #333;
+  margin-bottom: 18px;
 }
 .hatch-section .hatch-img {
-  margin-top: 18px;
-  margin-left: 18px;
+  margin: 0 auto;
+}
+.hatch-section .hatch-img img {
+  width: 1100px;
 }
 .hatch-section .hatch-link {
   margin-top: 6px;
 }
 .advantage-section {
   padding: 60px 0 70px;
-  text-align: center;
   background-color: #f9f9ff;
 }
 .advantage-section .advantage-title {
@@ -121,57 +126,69 @@ a {
   line-height: 46px;
   color: #333;
   font-weight: 500;
+  text-align: center;
 }
 .advantage-section .advantage-list {
-  margin: 65px auto 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 65px auto 60px;
   font-size: 0;
 }
 .advantage-section .advantage-list .advantage-item {
   display: inline-block;
-  width: 300px;
-  height: 410px;
+  width: 200px;
+  height: 270px;
   background-color: #fff;
   border-radius: 0 66px 0 66px;
-  margin-right: 80px;
-  padding: 34px 26px 0 20px;
+  margin-right: 30px;
+  padding: 14px;
   vertical-align: top;
 }
 .advantage-section .advantage-list .advantage-item:last-child {
   margin-right: 0;
 }
 .advantage-section .advantage-list .advantage-item:last-child .advantage-item-text {
-  font-size: 25px;
-  line-height: 38px;
+  font-size: 17px;
+  line-height: 2;
 }
 .advantage-section .advantage-list .advantage-item .advantage-index {
   position: relative;
   display: inline-block;
-  width: 79px;
-  height: 90px;
-  float: left;
+  text-align: left;
+  width: 45px;
+  height: 45px;
   background-image: url(../img/advantage-01.png);
-}
-.advantage-section .advantage-list .advantage-item .advantage-index p {
-  line-height: 90px;
-  font-size: 40px;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  line-height: 45px;
+  font-size: 22px;
   color: #333;
-  margin-left: 20px;
-  margin-top: 10px;
+  padding-left: 19px;
+  padding-top: 5px;
 }
 .advantage-section .advantage-list .advantage-item .advantage-item-title {
-  margin-top: 30px;
-  font-size: 40px;
-  line-height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 45px;
   color: #333;
   font-weight: 500;
-  margin-bottom: 68px;
+  margin-bottom: 10px;
+  margin-left: 8px;
 }
 .advantage-section .advantage-list .advantage-item .advantage-item-text {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 2;
   color: #333;
   text-align: left;
-  margin-left: 22px;
+  margin-left: 16px;
+}
+.advantage-section .advantage-link {
+  text-align: center;
 }
 .course-section {
   background-color: #fff;
@@ -854,7 +871,7 @@ a {
   display: inline-block;
 }
 .need-section .need-list .need-item {
-  opacity: 0.8;
+  opacity: 0.7;
   display: inline-block;
   margin-right: 120px;
   width: 220px;
@@ -893,16 +910,21 @@ a {
   color: #fff;
   margin-bottom: 25px;
 }
-.sign-section .sign-sub {
+.sign-section .sign-subhead {
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+.sign-section .sign-subhead .sign-sub {
   font-size: 0;
   margin-bottom: 10px;
 }
-.sign-section .sign-sub .sign-sub-icon {
+.sign-section .sign-subhead .sign-sub .sign-sub-icon {
   display: inline-block;
   vertical-align: middle;
   margin-right: 12px;
 }
-.sign-section .sign-sub .sign-sub-text {
+.sign-section .sign-subhead .sign-sub .sign-sub-text {
   display: inline-block;
   vertical-align: middle;
   font-size: 25px;
