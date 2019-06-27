@@ -21,9 +21,13 @@ body {
   color: #fff;
   line-height: 50px;
 }
+.page-link-button:hover {
+  opacity: 0.9;
+}
 .banner-section {
   min-height: 636px;
   background-image: url(../img/banner-01.jpg);
+  background-position: center;
   text-align: center;
   padding-top: 28px;
 }
@@ -284,6 +288,7 @@ body {
 .video-section {
   min-height: 735px;
   background-image: url(../img/video-01.jpg);
+  background-position: center;
   padding-top: 44px;
   text-align: center;
 }
@@ -304,6 +309,7 @@ body {
   padding: 35px 0 40px;
   text-align: center;
   background-image: url(../img/swiper-banner.jpg);
+  background-position: center;
 }
 .swiper-section .swiper-title {
   font-size: 46px;
@@ -313,6 +319,9 @@ body {
 }
 .swiper-section .swiper-img {
   margin: 29px 0 20px;
+}
+.swiper-section .swiper-outside {
+  width: 1000px;
 }
 .swiper-section .swiper-container {
   width: 856px;
@@ -358,6 +367,43 @@ body {
 }
 .swiper-section .swiper-link .page-link-button:last-child {
   margin-right: 0;
+}
+.swiper-outside {
+  position: relative;
+  margin: 0 auto;
+}
+.swiper-outside .swiper-button-prev {
+  background-image: none;
+  display: inline-block;
+  width: 60px;
+  height: 80px;
+}
+.swiper-outside .swiper-button-prev:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #333;
+  border-left: 4px solid #333;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 999;
+}
+.swiper-outside .swiper-button-next {
+  background-image: none;
+  display: inline-block;
+  width: 60px;
+  height: 80px;
+}
+.swiper-outside .swiper-button-next:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #333;
+  border-right: 4px solid #333;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .comparison-section {
   background-color: #fff;
@@ -454,12 +500,22 @@ body {
   padding: 60px 0 40px;
   text-align: center;
   background-image: url(../img/enterprise-01.jpg);
+  background-position: center;
 }
 .enterprise-section .enterprise-title {
   font-size: 40px;
   line-height: 40px;
   color: #fff;
   margin-bottom: 40px;
+}
+.enterprise-section .swiper-outside {
+  width: 800px;
+}
+.enterprise-section .swiper-outside .swiper-button-prev:before {
+  border-color: #fff;
+}
+.enterprise-section .swiper-outside .swiper-button-next:before {
+  border-color: #fff;
 }
 .enterprise-section .swiper-container {
   width: 663px;
@@ -535,23 +591,23 @@ body {
   margin: 30px auto 0;
   font-size: 0;
   list-style: none;
-  border: 2px #bec2cb solid;
+  border: 1px #e4e4e4 solid;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  background-color: #eef2f9;
+  background-color: #fff;
 }
 .schedule-section .schedule-content .schedule-list-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #c1cce2;
+  background-color: #519fee;
   vertical-align: top;
 }
 .schedule-section .schedule-content .schedule-list-title .schedule-item-title {
   display: inline-block;
-  font-size: 15px;
-  color: #667080;
-  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 54px;
   border-right: 1px solid #bec2cb;
   border-bottom: 1px solid #bec2cb;
 }
@@ -574,7 +630,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #667080;
+  color: #333;
   font-size: 0;
 }
 .schedule-section .schedule-content .schedule-main:nth-child(3) .schedule-month-left {
@@ -617,14 +673,14 @@ body {
 }
 .schedule-section .schedule-content .schedule-right .schedule-list-content .schedule-list-desc {
   display: inline-block;
-  line-height: 28px;
-  font-size: 14px;
+  line-height: 40px;
+  font-size: 15px;
   border-right: 1px solid #bec2cb;
   border-bottom: 1px solid #bec2cb;
 }
 .schedule-section .schedule-content .schedule-right .schedule-list-content .schedule-list-desc.high {
-  background-color: #dae0e8;
-  color: #667080;
+  background-color: #ff7293;
+  color: #fff;
   font-weight: 500;
 }
 .schedule-section .schedule-content .schedule-right .schedule-list-content .schedule-list-desc:last-child {
@@ -752,6 +808,9 @@ body {
   font-size: 8px;
   line-height: 18px;
 }
+.faq-section .faq-content .faq-issue-list .issue-item .issue-link:hover {
+  opacity: 0.9;
+}
 .faq-section .faq-content .faq-issue-list .issue-item:nth-child(even) .issue-ask {
   background-color: #077fff;
 }
@@ -811,6 +870,7 @@ body {
   padding: 56px;
   text-align: center;
   background-image: url(../img/policy-01.jpg);
+  background-position: center;
 }
 .policy-section .policy-title {
   font-size: 40px;
@@ -853,6 +913,7 @@ body {
   padding: 56px 0 40px;
   text-align: center;
   background-image: url(../img/need-banner.jpg);
+  background-position: center;
 }
 .need-section .need-title {
   font-size: 46px;
@@ -901,8 +962,8 @@ body {
 .sign-section {
   padding: 33px 0 6px 0;
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(#0f5584), color-stop(#116291), color-stop(#1689b7), color-stop(#105b8a), to(#0f507f));
-  background: linear-gradient(to left, #0f5584, #116291, #1689b7, #105b8a, #0f507f);
+  background: -webkit-gradient(linear, right top, left top, from(#105f8e), color-stop(#1478a7), color-stop(#2d91b9), color-stop(#1479a7), to(#116493));
+  background: linear-gradient(to left, #105f8e, #1478a7, #2d91b9, #1479a7, #116493);
 }
 .sign-section .sign-title {
   font-size: 46px;
