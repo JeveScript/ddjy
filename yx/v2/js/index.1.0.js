@@ -13,6 +13,7 @@
       $('.telephone-text').on('focus', this.removeError);
       $('.send-code').on('click', this.handleSendCode);
       $('.imgcode-img').on('click',this.getImgCode);
+      $('.leyu').on('click',this.handleLeyu);
     },
     imgCodeIndex: 0,
     smsLock: false,
@@ -22,10 +23,13 @@
       position: null,
       tel: 13000000000,
       name: null,
-      type: 'M-2.0',
+      type: 'PC-1.0',
       location: window.location.href,
       referrer: document.referrer,
       hmsr: '',
+    },
+    leyu: function() {
+      window.open('http://html.ecqun.com/kf/sdk/openwin.html?corpid=6783752&cstype=rand&mode=0&cskey=Lvron6AfkRRDhn2gDX&scheme=0');
     },
     slideshow:function(){
       var mySwiper = new Swiper ('.swiper-container', {
@@ -192,16 +196,12 @@
         success: function(res){
           if(res.code === 200){
             PAGE.checkLock = false;
-            // $('.success-container').fadeIn().siblings().fadeOut();
-            alert('提交成功');
-            $('.telephone-text').val('');
-            $('.imgcode-input').val('');
-            $('.sms-code').val('');
-            /*增加人数*/    
-            let numberPeople = $('.number-people').text();
-            numberPeople = Number(numberPeople) ;
-            numberPeople += 1;
-            $('.number-people').text(numberPeople); 
+            $('.from-container').html('提交成功！').css({
+              height:'302px',
+              fontSize: '52px',
+              color:'#fff',
+              paddingTop: '40px'
+            })
           }else{
             alert(res.message);
             PAGE.checkLock = false;
