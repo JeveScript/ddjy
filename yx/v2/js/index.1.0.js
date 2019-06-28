@@ -181,13 +181,8 @@
           PAGE.checkLock = false;
         }
       })
-      /* 数据提交*/
-      /*PAGE.handleSubmit(PAGE.pushData);*/
-      /*增加人数*/
-      let numberPeople = $('.number-people').text();
-      numberPeople = Number(numberPeople) ;
-      numberPeople += 1
-      $('.number-people').text(numberPeople);     
+      // 数据提交
+      // PAGE.handleSubmit(PAGE.pushData);
     },
     handleSubmit: function(data) {
       $.ajax({
@@ -197,7 +192,16 @@
         success: function(res){
           if(res.code === 200){
             PAGE.checkLock = false;
-            $('.success-container').fadeIn().siblings().fadeOut();
+            // $('.success-container').fadeIn().siblings().fadeOut();
+            alert('提交成功');
+            $('.telephone-text').val('');
+            $('.imgcode-input').val('');
+            $('.sms-code').val('');
+            /*增加人数*/    
+            let numberPeople = $('.number-people').text();
+            numberPeople = Number(numberPeople) ;
+            numberPeople += 1;
+            $('.number-people').text(numberPeople); 
           }else{
             alert(res.message);
             PAGE.checkLock = false;
