@@ -28,7 +28,7 @@
       referrer: document.referrer,
       hmsr: '',
     },
-    leyu: function() {
+    handleLeyu: function() {
       window.open('http://html.ecqun.com/kf/sdk/openwin.html?corpid=6783752&cstype=rand&mode=0&cskey=Lvron6AfkRRDhn2gDX&scheme=0');
     },
     slideshow:function(){
